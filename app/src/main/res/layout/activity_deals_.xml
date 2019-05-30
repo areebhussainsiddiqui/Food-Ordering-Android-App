@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Classes.Deals_Activity"
+    android:background="@color/charcol_black"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sub_menu_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_alignLeft="@+id/sub_menu_backbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Deals"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="6sp"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/menu_cartbtn"
+                android:layout_width="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cartbtn"
+                    android:src="@drawable/cart"
+                    />
+                <TextView
+                    android:id="@+id/counter_txt"
+                    android:background="@drawable/custom_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:layout_alignBottom="@id/cartbtn"
+                    android:textAlignment="center"
+                    android:layout_alignRight="@+id/cartbtn"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="6dp"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <com.github.ybq.android.spinkit.SpinKitView
+        android:padding="160dp"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.ChasingDots"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:SpinKit_Color="@color/colorPrimary" />
+        <ImageView
+            android:visibility="invisible"
+            android:layout_margin="150dp"
+            android:id="@+id/wifi_IV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/internet"
+            />
+
+        <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Deals_RecyclerView"/>
+
+</RelativeLayout>
+</LinearLayout>

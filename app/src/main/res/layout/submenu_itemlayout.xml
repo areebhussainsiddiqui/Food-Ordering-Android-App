@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/charcol_black"
+    android:layout_height="120dp"
+    android:id="@+id/parent_layout"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <ImageView
+        android:layout_weight="0"
+        android:id="@+id/submenu_item_image"
+        android:layout_width="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="120dp"
+        android:src="@drawable/image1"
+        />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/submenu_item_image"
+        android:layout_toLeftOf="@+id/itemadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/itemname"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_name"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            />
+            <TextView
+            android:layout_below="@+id/itemname"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS: "
+                android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_below="@+id/itemname"
+            android:id="@+id/itemprice"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:text="item price"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+<ImageView
+
+    android:id="@+id/itemadd"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_add"/>
+
+<View
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="4dp"
+    android:background="@color/colorPrimary"/>
+</RelativeLayout>

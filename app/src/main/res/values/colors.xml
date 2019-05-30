@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="primary">#00574B</color>
+     <color name="font_color">#8DFF652F</color>
+    <color name="colorPrimary">#ff652f</color>
+    <color name="colorPrimaryDark">#ff652f</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000</color>
+    <color name="charcol_black">#36454f</color>
+    <color name="charcol_black2">#7A36454F</color>
+
+    <color name="white">#fff</color>
+    <color name="whitehint">#AAA4A4</color>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity_Classes.MainActivity"
+    android:background="@color/charcol_black"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_main">
+
+
+        <!-- SLIDER -->
+<ViewFlipper
+        android:layout_alignParentTop="true"
+        android:elevation="25dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/white"
+        android:id="@+id/main_viewfipper"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/wifi_IV"
+        android:visibility="invisible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/internet"
+        />
+</RelativeLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+     android:layout_below="@+id/main_viewfipper"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.ChasingDots"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center"
+        android:padding="160dp"
+
+        android:visibility="visible"
+        app:SpinKit_Color="@color/colorPrimary"
+        app:SpinKit_Style="ThreeBounce" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/main_viewfipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Main_RecyclerView">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:focusable="true"
+        android:id="@+id/Main_cartButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+       android:background="@drawable/custom_buttons"
+        android:gravity="center"
+        >
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cart"/>
+
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:focusable="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+
+        android:layout_marginRight="30dp"
+        app:civ_border_overlay="true"
+        android:src="@drawable/cart"
+        app:civ_border_color="#000"
+        app:civ_fill_color="@color/colorPrimary" />
+-->
+    </RelativeLayout>
+</RelativeLayout>
+

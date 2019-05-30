@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity_Classes.Splash_Screen"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    android:background="@drawable/splash_screen"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:paddingBottom="150dp"
+            android:gravity="center"
+            android:fontFamily="@font/food_font"
+            android:textStyle="bold"
+            android:textSize="50dp"
+
+/>
+    </LinearLayout>

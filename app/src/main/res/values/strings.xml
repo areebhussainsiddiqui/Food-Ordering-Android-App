@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Bon Appetite</string>
+    <string name="title_activity_menu_screen">MenuScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="item_name">ITEM NAME</string>
+    <string name="menu_activity">MENU</string>
+    <string name="menu_item_1">MENU ITEM 1</string>
+    <string name="menu_item_2">Menu Item 2</string>
+    <string name="menu_item_5">Menu Item 5</string>
+    <string name="menu_item_6">Menu Item 6</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="cart_title">Food Bucket</string>
+
+
+    <string name="facebook_app_id">442405606562947</string>
+    <string name="fb_login_protocol_scheme">fb442405606562947</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feedback">FeedBack</string>
+    <string name="title_activity_test__nav">test_Nav</string>
+</resources>

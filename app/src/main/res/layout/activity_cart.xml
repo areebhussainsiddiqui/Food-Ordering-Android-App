@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Activity_Classes.Cart_Activity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cart_backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Food Bucket"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="6sp"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:id="@+id/layout"
+    android:padding="10dp"
+    android:layout_above="@+id/tt"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Items"
+            android:fontFamily="@font/montserrat"
+           android:textColor="@color/black"
+           android:textStyle="italic"/>
+
+        <android.support.v7.widget.RecyclerView
+
+            android:layout_marginVertical="10dp"
+            android:id="@+id/cart_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <!--  <ImageView
+              android:id="@+id/edit_main"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:src="@drawable/ic_mode_edit"
+            />-->
+    </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+      android:layout_above="@id/cart_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"
+        android:gravity="right|bottom"
+        >
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:id="@+id/txt"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Total Amount:"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/txt"
+            android:id="@+id/bill_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="0000"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/bill_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:fontFamily="@font/montserrat"
+            android:text=" Rs"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cart_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="Place Order"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_buttons"/>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/charcol_black"
+    android:layout_height="wrap_content"
+    android:id="@+id/sub_deals_parent_layout"
+    android:orientation="horizontal"
+    android:padding="25dp"
+>
+<!--
+    <ImageView
+        android:layout_weight="0"
+        android:id="@+id/deals_item_image"
+        android:layout_width="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="120dp"
+        android:src="@drawable/image1"
+        />-->
+    <LinearLayout
+        android:layout_toRightOf="@+id/deals_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/sub_deals_itemname"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="10dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_below="@+id/deals_itemname"
+            android:id="@+id/sub_deals_quantity"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantitiy"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/sub_deals_itemprice"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item price"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:"
+                android:textStyle="italic"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/sub_deals_totalprice"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="total price"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+
+        android:layout_height="4dp"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>

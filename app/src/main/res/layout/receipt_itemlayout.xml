@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:elevation="20dp"
+    android:layout_margin="2dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/receipt_name"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:textSize="10dp"
+
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="BURGER"/>
+   <!-- <ImageView
+        android:id="@+id/cart_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mode_edit"
+        android:layout_alignParentRight="true"/>-->
+</RelativeLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:layout_height="match_parent"
+                android:textStyle="italic|bold"
+                android:text="Cost"/>
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/receipt_price"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:text="5000"/>
+
+
+            <TextView
+                android:paddingHorizontal="4dp"
+                android:layout_margin="4dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="x"/>
+
+      <!--      <ImageView
+                android:id="@+id/add_quantitiy"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="5000"/>
+-->
+            <TextView
+                android:id="@+id/receipt_Quantity"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+
+                android:text="5"/>
+
+
+   <!--         <ImageView
+                android:id="@+id/decrse_quantitiy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:src="@drawable/ic_remove_circle"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                />
+       -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_remove_circle"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="="/>
+
+
+
+
+            <TextView
+                android:id="@+id/receipt_actualprice"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="5000"/>
+
+            <ImageView
+                android:id="@+id/deletebtn"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_cancel_black"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

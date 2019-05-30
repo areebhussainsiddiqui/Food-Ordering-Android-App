@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1052250786568",
+    "firebase_url": "https://foodza-6b001.firebaseio.com",
+    "project_id": "foodza-6b001",
+    "storage_bucket": "foodza-6b001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052250786568:android:8efd66e586badb61",
+        "android_client_info": {
+          "package_name": "com.example.cipherslab.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052250786568-l9jcq257k3nkiall1c1l0rq9unhfukga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cipherslab.myapplication",
+            "certificate_hash": "8594ce63fcf8b71d2a490f58e6651ead86e8de3f"
+          }
+        },
+        {
+          "client_id": "1052250786568-1h4nf2iqul5o0toog7iagl6j87hv1uon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdpghPYBy17l1y3ScC3B-ONh8mIXgPTs4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052250786568-1h4nf2iqul5o0toog7iagl6j87hv1uon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
